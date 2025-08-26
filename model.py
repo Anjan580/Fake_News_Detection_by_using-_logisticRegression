@@ -1,6 +1,7 @@
 import joblib
 from preprocessing import wordopt
 import pandas as pd
+from Alogrithm import LogisticRegressionSparse
 
 newsmodel = joblib.load("LR_model.pkl")
 vectorizer = joblib.load("vectorization.pkl")
