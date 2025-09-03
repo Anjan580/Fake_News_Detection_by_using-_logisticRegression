@@ -68,14 +68,14 @@ class LogisticRegressionSparse:
 x_train, x_test, y_train, y_test = train_test_split(X, y, test_size = 0.3, random_state = 15)
 
 # Vectorization
-vectorization = TfidfVectorizer(max_features=10000)
+vectorization = TfidfVectorizer(max_features=20000, ngram_range=(1,2), sublinear_tf=True)
 
 xv_train = vectorization.fit_transform(x_train)
 xv_test = vectorization.transform(x_test)
 joblib.dump(vectorization, 'vectorization.pkl')
 
 # Train the model
-model = LogisticRegressionSparse(lr=0.1, epochs=1000)
+model = LogisticRegressionSparse(lr=0.1, epochs=10000)
 model.fit(xv_train, y_train)
 
 # Predictions

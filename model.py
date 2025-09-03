@@ -26,9 +26,9 @@ def manual_testing(news):
 
 def output_label(n):
     if n== 0:
-        return "It is a Fake News."
+        return "This might be Fake. "
     elif n== 1:
-        return "It is a Genuine News."
+        return "This might be Genuine News."
     
 
 # news_artical = input("Enter the Artical:")
