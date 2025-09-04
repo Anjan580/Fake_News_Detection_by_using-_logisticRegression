@@ -58,11 +58,16 @@ class LogisticRegressionSparse:
 
     def predict_proba(self, X):
         z = X.dot(self.weights) + self.bias
-        return sigmoid(z)
+        proba_class1 = sigmoid(z)              # probability of Genuine (class=1)
+        proba_class0 = 1 - proba_class1        # probability of Fake (class=0)
+    
+        # return probabilities in sklearn style → [[p_fake, p_real], ...]
+        return np.vstack((proba_class0, proba_class1)).T
+
 
     def predict(self, X):
-        y_pred = self.predict_proba(X)
-        return np.where(y_pred > 0.5, 1, 0)
+        y_pred_proba = self.predict_proba(X)
+        return np.argmax(y_pred_proba, axis=1)
 
 # Split the dataset
 x_train, x_test, y_train, y_test = train_test_split(X, y, test_size = 0.3, random_state = 15)

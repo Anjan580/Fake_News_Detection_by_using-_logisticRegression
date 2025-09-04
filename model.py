@@ -18,10 +18,10 @@ def manual_testing(news):
     new_xv_test = vectorizer.transform(new_x_test)
     
     # Prediction using Logistic Regression
-    pred_lr = newsmodel.predict(new_xv_test)
+    pred_proba = newsmodel.predict_proba(new_xv_test)[0]  # probabilities [p_fake, p_real]
+    pred_class = newsmodel.predict(new_xv_test)[0]
 
-    # return "\n\nLR Prediction: {}".format(output_label(pred_lr[0]))
-    return pred_lr[0]
+    return pred_class, pred_proba
 
 
 def output_label(n):
@@ -30,8 +30,3 @@ def output_label(n):
     elif n== 1:
         return "This might be Genuine News."
     
-
-# news_artical = input("Enter the Artical:")
-
-# result = manual_testing(news_artical)
-# print(result)
