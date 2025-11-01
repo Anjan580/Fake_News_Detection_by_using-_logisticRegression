@@ -121,7 +121,7 @@ elif st.session_state.page == "About":
     - Machine Learning (TF-IDF, Logistic Regression Algorithm)
 
     ###  Developed By
-    Anjani Kumar Pokhrel, Babita Acharya, Jenisha Shrestha \n
+    Anjani Kumar Pokhrel \n
     Trinity International college \n
     2025  
 
