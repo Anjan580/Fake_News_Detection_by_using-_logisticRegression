@@ -122,7 +122,6 @@ elif st.session_state.page == "About":
 
     ###  Developed By
     Anjani Kumar Pokhrel \n
-    Trinity International college \n
     2025  
 
     ---
