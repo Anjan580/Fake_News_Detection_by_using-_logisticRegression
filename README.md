@@ -25,10 +25,10 @@ textual patterns and extracting features using TF-IDF.
 
 ## Key Results
 
--   **Train Accuracy:** \~96%\
--   **Test Accuracy:** \~96%\
--   **Model Used:** Logistic Regression\
--   **Vectorizer:** TF-IDF\
+-   **Train Accuracy:** \~96%
+-   **Test Accuracy:** \~96%
+-   **Model Used:** Logistic Regression
+-   **Vectorizer:** TF-IDF
 -   Balanced accuracy across training/testing proves stable performance.
 
 ------------------------------------------------------------------------
@@ -37,37 +37,37 @@ textual patterns and extracting features using TF-IDF.
 
 ### 1. **Data Preprocessing**
 
--   Lowercasing\
--   Removing special characters & punctuations\
--   Stopword removal\
--   Lemmatization\
+-   Lowercasing
+-   Removing special characters & punctuations
+-   Stopword removal
+-   Lemmatization
 -   Converting text to numerical vectors using **TF-IDF**
 
 ### 2. **Model Training**
 
--   Train/test split (70%--30%)\
--   Model: **Logistic Regression**\
+-   Train/test split (70%--30%)
+-   Model: **Logistic Regression**
 -   Fitted using TF-IDF transformed text
 
 ### 3. **Evaluation**
 
--   Accuracy Score\
--   Precision\
--   Recall\
--   F1-Score\
--   Confusion Matrix\
--   Classification Report\
+-   Accuracy Score
+-   Precision
+-   Recall
+-   F1-Score
+-   Confusion Matrix
+-   Classification Report
 -   No overfitting (train ≈ test accuracy)
 
 ------------------------------------------------------------------------
 
 ## Tools & Technologies
 
--   **Python**\
--   **Pandas**, **NumPy**\
--   **Matplotlib**, **Seaborn**(For confusion matrix)\
--   **Scikit-learn** (model, evaluation, TF-IDF)\
--   **NLTK / re** (text preprocessing)\
+-   **Python**
+-   **Pandas**, **NumPy**
+-   **Matplotlib**, **Seaborn**(For confusion matrix)
+-   **Scikit-learn** (model, evaluation, TF-IDF)
+-   **NLTK / re** (text preprocessing)
 -   **Jupyter Notebook / VS Code**
 
 ------------------------------------------------------------------------
@@ -75,36 +75,36 @@ textual patterns and extracting features using TF-IDF.
 ## Dataset Description
 
 The dataset generally includes the following columns: - **title** --
-headline of the news\
-- **text** -- full news article\
-- **subject** -- category/topic\
-- **date** -- publication date\
+headline of the news
+- **text** -- full news article
+- **subject** -- category/topic
+- **date** -- publication date
 - **label** -- *0 = Real*, *1 = Fake*
 
 ------------------------------------------------------------------------
 
 ## Features
 
--   Robust text cleaning pipeline\
--   TF-IDF based feature extraction\
--   High classification accuracy\
--   Easy to deploy & extend\
+-   Robust text cleaning pipeline
+-   TF-IDF based feature extraction
+-   High classification accuracy
+-   Easy to deploy & extend
 -   Useful for research and academic projects (CSIT final year)
 
 ------------------------------------------------------------------------
 
 ## Future Enhancements
 
--   Add **Deep Learning models** (LSTM, Bi-LSTM)\
--   Use **BERT or other transformer models** for higher accuracy\
--   Add real-time prediction API\
+-   Add **Deep Learning models** (LSTM, Bi-LSTM)
+-   Use **BERT or other transformer models** for higher accuracy
+-   Add real-time prediction API
 -   Improve dataset size and balance
 
 ------------------------------------------------------------------------
 
 ## Author
 
-**Anjani Kumar Pokhrel**\
-Kathmandu, Nepal\
+**Anjani Kumar Pokhrel**
+Kathmandu, Nepal
 [LinkedIn](https://www.linkedin.com/in/anjan-pokhrel-441425283/)\
 [GitHub](https://github.com/Anjan580)
