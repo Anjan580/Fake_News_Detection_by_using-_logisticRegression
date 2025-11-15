@@ -4,7 +4,7 @@
 
 The **Fake News Detection System** is a machine learning-based project
 that classifies news articles as *Real* or *Fake* using text processing
-and Logistic Regression.\
+and Logistic Regression.
 This project demonstrates how Natural Language Processing (NLP) and
 machine learning can be applied to tackle misinformation by analyzing
 textual patterns and extracting features using TF-IDF.
@@ -13,12 +13,12 @@ textual patterns and extracting features using TF-IDF.
 
 ## Objectives
 
--   Detect and classify news as **Real** or **Fake**.\
+-   Detect and classify news as **Real** or **Fake**.
 -   Preprocess text using **tokenization, stopword removal, cleaning,
-    and TF-IDF vectorization**.\
--   Train and evaluate a machine learning model (Logistic Regression).\
+    and TF-IDF vectorization**.
+-   Train and evaluate a machine learning model (Logistic Regression).
 -   Achieve a reliable accuracy score (\~96%) suitable for academic &
-    real-world use.\
+    real-world use.
 -   Build a easy to use user interface(UI)
 
 ------------------------------------------------------------------------
